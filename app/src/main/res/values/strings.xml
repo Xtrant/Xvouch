@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Xvouch</string>
+    <string name="title">Game Online</string>
+    <string name="game_title">Nama Game</string>
+    <string name="developer">Dev</string>
+    <string name="price">Price</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="about">About Me\n</string>
+    <string name="profile">Profile</string>
+    <string name="my_name">Ismail Extrant</string>
+    <string name="my_education">Student</string>
+
+    <string-array name="data_photo">
+        <item>@drawable/ml</item>
+        <item>@drawable/ff</item>
+        <item>@drawable/pubg</item>
+        <item>@drawable/aov</item>
+        <item>@drawable/gi</item>
+        <item>@drawable/coc</item>
+    </string-array>
+
+    <string-array name="data_name">
+        <item>Mobile Legends</item>
+        <item>Free Fire</item>
+        <item>PUBG Mobile</item>
+        <item>Arena Of Valor</item>
+        <item>Genshin Impact</item>
+        <item>Clash Of Clans</item>
+    </string-array>
+
+    <string-array name="data_developer">
+        <item>Moonton</item>
+        <item>Garena</item>
+        <item>Tencent</item>
+        <item>TiMi</item>
+        <item>miHoYo</item>
+        <item>Supercell</item>
+    </string-array>
+
+    <string-array name="data_price">
+        <item>Rp2.000 - Rp500.000</item>
+        <item>Rp1.500 - Rp200.000</item>
+        <item>Rp5.000 - Rp1.000.000</item>
+        <item>Rp2.000 - Rp300.000</item>
+        <item>Rp7.000 - Rp1.500.000</item>
+        <item>Rp2.000 - Rp600.000</item>
+    </string-array>
+
+    <string-array name="data_judul">
+        <item>Email</item>
+        <item>Mobile</item>
+        <item>Github</item>
+        <item>Linkedin</item>
+        <item>Instragram</item>
+    </string-array>
+
+    <string-array name="data_isi">
+        <item>ismail.pandjoel@gmail.com</item>
+        <item>085171599891</item>
+        <item>Xtrant</item>
+        <item>Ismail Extrant</item>
+        <item>ismailextrant</item>
+    </string-array>
+
+    <string-array name="data_logo">
+        <item>@drawable/email</item>
+        <item>@drawable/mobile</item>
+        <item>@drawable/github</item>
+        <item>@drawable/linkedin</item>
+        <item>@drawable/ig</item>
+    </string-array>
+
+
+
+
+
+</resources>
