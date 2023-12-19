@@ -10,6 +10,15 @@
     <string name="profile">Profile</string>
     <string name="my_name">Ismail Extrant</string>
     <string name="my_education">Student</string>
+    <string name="title_middle">Masukkan Data Akun Anda</string>
+    <string name="id_acc">ID</string>
+    <string name="nomor_whatsapp">Nomor Whatsapp</string>
+    <string name="server">Server</string>
+    <string name="title_price">Pilih Nominal yang ingin Anda Beli</string>
+    <string name="err">Err</string>
+    <string name="masukkan_nomor_whatsapp">Masukkan Nomor WhatsApp</string>
+    <string name="masukkan_server">Masukkan Server</string>
+    <string name="masukkan_id">Masukkan ID</string>
 
     <string-array name="data_photo">
         <item>@drawable/ml</item>
@@ -70,9 +79,6 @@
         <item>@drawable/linkedin</item>
         <item>@drawable/ig</item>
     </string-array>
-
-
-
 
 
 </resources>

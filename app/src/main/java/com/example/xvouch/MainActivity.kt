@@ -1,5 +1,6 @@
 package com.example.xvouch
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_detail)
 
         rvGame = binding.rvVoucher
         rvGame.setHasFixedSize(true)
@@ -43,7 +44,8 @@ class MainActivity : AppCompatActivity() {
                 rvGame.layoutManager = GridLayoutManager(this,2)
             }
             R.id.action_about -> {
-
+                val profileIntent = Intent(this@MainActivity, ProfileActivity::class.java)
+                startActivity(profileIntent)
             }
         }
         return super.onOptionsItemSelected(item)
@@ -63,8 +65,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showRecyclerList() {
-        rvGame.layoutManager = GridLayoutManager(this,2)
-        val listGameAdapter = GridGameAdapter(list)
+        rvGame.layoutManager = LinearLayoutManager(this)
+        val listGameAdapter = ListGameAdapter(list)
         rvGame.adapter = listGameAdapter
     }
 
