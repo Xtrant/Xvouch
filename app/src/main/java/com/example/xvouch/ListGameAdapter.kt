@@ -1,5 +1,6 @@
 package com.example.xvouch
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -24,5 +25,11 @@ class ListGameAdapter(private val listGame: ArrayList<Game>) : RecyclerView.Adap
         holder.binding.tvDeveloper.text = developer
         holder.binding.tvPrice.text = price
 
+        holder.itemView.setOnClickListener {
+            val intentDetail = Intent(holder.itemView.context, DetailActivity::class.java)
+            intentDetail.putExtra("key_game", listGame[holder.adapterPosition])
+            holder.itemView.context.startActivity(intentDetail)
+            }
+        }
+
     }
-}

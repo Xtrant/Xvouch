@@ -1,7 +1,27 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.Xvouch" parent="Theme.Material3.DayNight">
+
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
     </style>
+
+    <style name="Rule">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="bg_profile">
+        <item name="android:background">#F4DFC8</item>
+    </style>
+
+    <style name="voucherlist">
+        <item name="android:background">@color/cardview_dark_background</item>
+    </style>
+
+    <style name="voucherlistbg">
+        <item name="android:background">@color/black</item>
+    </style>
+
+
 </resources>

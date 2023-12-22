@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Xvouch</string>
-    <string name="title">Game Online</string>
+    <string name="title">Voucher Game</string>
     <string name="game_title">Nama Game</string>
     <string name="developer">Dev</string>
     <string name="price">Price</string>
@@ -19,6 +19,10 @@
     <string name="masukkan_nomor_whatsapp">Masukkan Nomor WhatsApp</string>
     <string name="masukkan_server">Masukkan Server</string>
     <string name="masukkan_id">Masukkan ID</string>
+    <string name="level_up_your_fun_shop_play_and_win">\"Level Up Your Fun: Shop, Play, and Win!\"</string>
+    <string name="buy">BUY</string>
+    <string name="share">Share</string>
+    <string name="content_description">Image</string>
 
     <string-array name="data_photo">
         <item>@drawable/ml</item>
@@ -27,6 +31,10 @@
         <item>@drawable/aov</item>
         <item>@drawable/gi</item>
         <item>@drawable/coc</item>
+        <item>@drawable/metal</item>
+        <item>@drawable/pool</item>
+        <item>@drawable/valo</item>
+        <item>@drawable/cod</item>
     </string-array>
 
     <string-array name="data_name">
@@ -36,6 +44,10 @@
         <item>Arena Of Valor</item>
         <item>Genshin Impact</item>
         <item>Clash Of Clans</item>
+        <item>Metal Slug</item>
+        <item>8 Ball Pool</item>
+        <item>Valorant</item>
+        <item>COD Mobile</item>
     </string-array>
 
     <string-array name="data_developer">
@@ -45,15 +57,32 @@
         <item>TiMi</item>
         <item>miHoYo</item>
         <item>Supercell</item>
+        <item>TiMi</item>
+        <item>Miniclip</item>
+        <item>Riot</item>
+        <item>TiMi</item>
     </string-array>
 
     <string-array name="data_price">
-        <item>Rp2.000 - Rp500.000</item>
-        <item>Rp1.500 - Rp200.000</item>
-        <item>Rp5.000 - Rp1.000.000</item>
-        <item>Rp2.000 - Rp300.000</item>
-        <item>Rp7.000 - Rp1.500.000</item>
-        <item>Rp2.000 - Rp600.000</item>
+        <item>Rp 2.500 - Rp 350.000</item>
+        <item>Rp 2.500 - Rp 350.000</item>
+        <item>Rp 2.500 - Rp 350.000</item>
+        <item>Rp 2.500 - Rp 350.000</item>
+        <item>Rp 2.500 - Rp 350.000</item>
+        <item>Rp 2.500 - Rp 350.000</item>
+        <item>Rp 2.500 - Rp 350.000</item>
+        <item>Rp 2.500 - Rp 350.000</item>
+        <item>Rp 2.500 - Rp 350.000</item>
+        <item>Rp 2.500 - Rp 350.000</item>
+<!--        <item>Rp 1.500 - Rp 200.000</item>-->
+<!--        <item>Rp 5.000 - Rp 1.000.000</item>-->
+<!--        <item>Rp 2.000 - Rp 300.000</item>-->
+<!--        <item>Rp 7.000 - Rp 1.500.000</item>-->
+<!--        <item>Rp 12.000 - Rp 600.000</item>-->
+<!--        <item>Rp 10.000 - Rp 500.000</item>-->
+<!--        <item>Rp 5.000 - Rp 300.000</item>-->
+<!--        <item>Rp 2.000 - Rp 600.000</item>-->
+<!--        <item>Rp 10.000 - Rp 1.000.000</item>-->
     </string-array>
 
     <string-array name="data_judul">
@@ -78,6 +107,69 @@
         <item>@drawable/github</item>
         <item>@drawable/linkedin</item>
         <item>@drawable/ig</item>
+    </string-array>
+
+    <string-array name="data_detail_img">
+        <item>@drawable/mldetail</item>
+        <item>@drawable/ffdetail</item>
+        <item>@drawable/pubgdetail</item>
+        <item>@drawable/aovdetail</item>
+        <item>@drawable/gidetail</item>
+        <item>@drawable/cocdetail</item>
+        <item>@drawable/metaldetail</item>
+        <item>@drawable/pooldetail</item>
+        <item>@drawable/valodetail</item>
+        <item>@drawable/coddetail</item>
+
+
+    </string-array>
+
+    <string-array name="data_dmPriceMl">
+        <item>Rp2.500</item>
+        <item>Rp 10.000</item>
+        <item>Rp 25.000</item>
+        <item>Rp 50.000</item>
+        <item>Rp 60.000</item>
+        <item>Rp 75.000</item>
+        <item>Rp 100.000</item>
+        <item>Rp 110.000</item>
+        <item>Rp 125.000</item>
+        <item>Rp 150.000</item>
+        <item>Rp 160.000</item>
+        <item>Rp 175.000</item>
+        <item>Rp 200.000</item>
+        <item>Rp 225.000</item>
+        <item>Rp 250.000</item>
+        <item>Rp 275.000</item>
+        <item>Rp 300.000</item>
+        <item>Rp 350.000</item>
+        <item>Rp 400.000</item>
+        <item>Rp 450.000</item>
+        <item>Rp 500.000</item>
+    </string-array>
+
+    <string-array name="data_dmAmountMl">
+        <item>8 Diamonds</item>
+        <item>36 Diamonds</item>
+        <item>90 Diamonds</item>
+        <item>180 Diamonds</item>
+        <item>222 Diamonds</item>
+        <item>277 Diamonds</item>
+        <item>370 Diamonds</item>
+        <item>406 Diamonds</item>
+        <item>494 Diamonds</item>
+        <item>554 Diamonds</item>
+        <item>596 Diamonds</item>
+        <item>668 Diamonds</item>
+        <item>746 Diamonds</item>
+        <item>854 Diamonds</item>
+        <item>924 Diamonds</item>
+        <item>1003 Diamonds</item>
+        <item>1136 Diamonds</item>
+        <item>1336 Diamonds</item>
+        <item>1506 Diamonds</item>
+        <item>1704 Diamonds</item>
+        <item>2010 Diamonds</item>
     </string-array>
 
 

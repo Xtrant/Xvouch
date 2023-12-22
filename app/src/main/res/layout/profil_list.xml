@@ -10,11 +10,14 @@
     android:layout_marginTop="4dp"
     android:layout_marginBottom="4dp"
     android:layout_gravity="center"
-    app:cardCornerRadius="4dp">
+    app:cardCornerRadius="4dp"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        style="@style/bg_profile"
+        >
 
         <ImageView
             android:id="@+id/logo"
@@ -26,7 +29,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/title"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/content_description" />
 
         <TextView
             android:id="@+id/title"
@@ -37,7 +41,8 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/logo"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Judul" />
+            tools:text="Judul"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/isi"
@@ -47,7 +52,8 @@
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/logo"
-            tools:text="Isi Judul" />
+            tools:text="Isi Judul"
+            android:textColor="@color/black"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

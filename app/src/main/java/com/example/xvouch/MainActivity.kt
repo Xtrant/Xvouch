@@ -1,5 +1,6 @@
 package com.example.xvouch
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,14 +12,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.xvouch.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var rvGame: RecyclerView
     private lateinit var binding: ActivityMainBinding
+    private lateinit var rvGame: RecyclerView
     private val list = ArrayList<Game>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_detail)
+        setContentView(binding.root)
 
         rvGame = binding.rvVoucher
         rvGame.setHasFixedSize(true)
@@ -51,14 +52,16 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+    @SuppressLint("Recycle")
     private fun getListGame(): ArrayList<Game> {
         val dataName = resources.getStringArray(R.array.data_name)
         val dataDev = resources.getStringArray(R.array.data_developer)
         val dataPrice = resources.getStringArray(R.array.data_price)
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
+        val dataImgDetail = resources.obtainTypedArray(R.array.data_detail_img)
         val listGame = ArrayList<Game> ()
         for (i in dataName.indices) {
-            val game = Game(dataName[i], dataDev[i], dataPrice[i], dataPhoto.getResourceId(i, -1))
+            val game = Game(dataName[i], dataDev[i], dataPrice[i], dataPhoto.getResourceId(i, -1), dataImgDetail.getResourceId(i, -1) )
             listGame.add(game)
         }
         return listGame

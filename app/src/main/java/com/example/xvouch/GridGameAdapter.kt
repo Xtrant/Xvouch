@@ -1,15 +1,18 @@
 package com.example.xvouch
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.xvouch.databinding.ItemGameGridBinding
 
-class GridGameAdapter (private val gridGame : ArrayList<Game>) : RecyclerView.Adapter<GridGameAdapter.GridViewHolder> () {
+class GridGameAdapter(private val gridGame: ArrayList<Game>) :
+    RecyclerView.Adapter<GridGameAdapter.GridViewHolder>() {
     class GridViewHolder(var binding: ItemGameGridBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GridViewHolder {
-        val binding = ItemGameGridBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =
+            ItemGameGridBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return GridViewHolder(binding)
     }
 
@@ -21,6 +24,12 @@ class GridGameAdapter (private val gridGame : ArrayList<Game>) : RecyclerView.Ad
         holder.binding.tvGameTitle.text = name
         holder.binding.tvDeveloper.text = developer
         holder.binding.tvPrice.text = price
-    }
 
+        holder.itemView.setOnClickListener {
+            val intentDetail = Intent(holder.itemView.context, DetailActivity::class.java)
+            intentDetail.putExtra("key_game", gridGame[holder.adapterPosition])
+            holder.itemView.context.startActivity(intentDetail)
+        }
+    }
 }
+

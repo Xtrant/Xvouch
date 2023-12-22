@@ -8,5 +8,6 @@ data class Game(
     val name: String,
     val dev: String,
     val price: String,
-    val photo: Int
+    val photo: Int,
+    val mainImageDetail: Int
 ): Parcelable

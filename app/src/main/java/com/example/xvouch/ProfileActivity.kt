@@ -1,6 +1,8 @@
 package com.example.xvouch
 
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -25,10 +27,16 @@ class ProfileActivity : AppCompatActivity() {
         showRecyclerList()
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                finish()
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
+
+    @SuppressLint("Recycle")
     private fun getListProfil(): ArrayList<Profil> {
         val dataJudul = resources.getStringArray(R.array.data_judul)
         val dataIsi = resources.getStringArray(R.array.data_isi)

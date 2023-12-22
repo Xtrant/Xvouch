@@ -1,9 +1,25 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.Xvouch" parent="Theme.Material3.DayNight">
+
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <!-- Garis-->
+    <style name="Rule">
+        <item name="android:background">#000000</item>
+    </style>
+
+    <style name="voucherlist">
+        <item name="android:background">#D2E0FB</item>
+    </style>
+
+    <style name="voucherlistbg">
+        <item name="android:background">#F9F3CC</item>
+    </style>
+
     <style name="Theme.Xvouch" parent="Base.Theme.Xvouch" />
+
+
 </resources>
